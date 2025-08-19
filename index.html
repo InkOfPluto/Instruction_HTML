@@ -163,13 +163,18 @@
         title: 'Page 3 · Simple Grasping Tutorial | 第三页 · 简单抓取教学',
         html: `
           <p>When the experiment officially begins, you should be in the state shown in the figure: wearing the headset, with your left hand on the button and your right hand relaxed in the air. | 当实验正式开始后，您应处于如下图所示的状态：佩戴好头显，左手放在按钮上，右手自然放松地悬空。</p>
-          <p style="color:#ff5555;"><b>Note: Please always keep your palm facing down, with your fingers naturally hanging down. | 注意：请始终保持掌心向下，五指自然下垂。</b></p>
+          <p><b>Note: Please always keep your palm facing down, with your fingers naturally hanging down. | 注意：请始终保持掌心向下，五指自然下垂。</b></p>
           <img src="如何开始.jpg" alt="How to Start">
+          <br>
           <p>Rotating your hand will make the five cubes change position with slight delay. | 旋转您的手部，五个小方块会随着手部旋转逐渐改变位置（稍有延迟）。</p>
           <video controls><source src="比较.mp4" type="video/mp4"></video>
+          <p><b>Note: If a large rotation angle is required, move your arm instead of relying only on your wrist. | 注意：如果需要旋转的角度过大，请移动手臂，而不仅仅依靠手腕。</b></p>
+          <video controls><source src="手臂旋转.mp4" type="video/mp4"></video>
+          <br>
           <p>Closing fingers makes the cubes close (grasp). | 合拢手指时，小方块会闭合（模拟抓取）。</p>
           <p>After grasping, slowly move your right hand up/down to lift. | 抓住后，慢慢上下移动右手抬起圆柱体。</p>
           <video controls><source src="抓取和上下移动.mp4" type="video/mp4"></video>
+          <p><b>Note: At the beginning of the grasp, please keep your hand lower to avoid losing Hand Tracking if the grasping height is too high. | 注意：在开始抓取时，请将手放低一些，避免抓取高度过高而导致 Hand Tracking 失灵。</b></p>
         `
       },
 
@@ -192,12 +197,13 @@
         title: 'Page 5 — Outcome & Attempts | 第五页 · 结果与次数',
         html: `
           <p>Leaving the blue lock area → cylinder tilts/slips; adjust via feedback. | 离开蓝色锁定区后会倾斜滑动，请依据反馈调整。</p>
-          <p>Goal: lift above the checkered plane and hold 3s; rotate to find optimal posture. | 目标：提到黑白平面以上保持 3 秒，并旋转寻找最优姿势。</p>
+          <p>Goal: Lift the cylinder above the black-and-white plane and hold it for 3 seconds, ensuring that the tilt angle does not exceed 5° during this time. | 目标：将圆柱体提升到黑白平面以上并保持 3 秒，确保在这 3 秒内倾斜角度不超过 5°。</p>
           <p>Success: sound + green label “Well Done! Next CoM! Press the button”. | 成功：提示音 + 绿色标签。</p>
           <video controls><source src="成功抓取.mp4" type="video/mp4"></video>
           <br>
           <p>Fail (tilt too large): sound + red label “Still slipping! Try again”. | 倾斜过大：失败音 + 红色标签。</p>
           <video controls><source src="失败尝试.mp4" type="video/mp4"></video>
+          <p>After a failure, please release your fingers and let the cylinder fall. Then, based on the visual or haptic feedback you receive, adjust the rotation direction and try to wrap more cubes around the direction in which the cylinder is tilting. | 失败后，请松开手指，让圆柱体落下。然后根据获得的视觉或触觉反馈调整旋转方向，并尽量让更多的小方块包裹住圆柱体倾倒的方向。</p>
           <br>
           <p>Each CoM has up to 5 attempts; lifting counts as an attempt; if used up, yellow label and auto switch in 3s. | 每个重心最多 5 次；抬起才计次；用尽将黄标提示并 3 秒后自动切换。</p>
           <video controls><source src="次数用尽.mp4" type="video/mp4"></video>
@@ -232,6 +238,7 @@
           <video controls><source src="疯狂旋转.mp4" type="video/mp4"></video>
           <p>The cylinder will disappear after leaving the lock area. | 圆柱体会在离开锁定区域后消失。</p>
           <video controls><source src="消失.mp4" type="video/mp4"></video>
+          <h2><b>Note: The faster the wheel rolls, the greater the tilt of the cylinder in that direction. Therefore, in the next attempt, you can place as many fingers as possible on that side. | 注意：滚轮滚动得越快，代表圆柱体在该方向上的倾斜程度越大。因此在下一次尝试时，您可以尽可能多地将手指部署在这个方向。</b></p>
           <br>
           <h3><b>Vision + Haptic | 视触结合</b></h3>
           <p>You can both see the tilt direction of the cylinder and feel the haptic feedback from the fingertip device, helping you better judge and adjust your grasping posture. | 您既能看到圆柱体的倾斜方向，又能通过指尖设备获得触觉反馈，从而更好地判断和调整抓取姿势。</p>
@@ -307,4 +314,3 @@
   </script>
 </body>
 </html>
-
