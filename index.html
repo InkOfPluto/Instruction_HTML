@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -97,7 +97,7 @@
     const PAGES = [
       /* ---------- Page 1 ---------- */
       {
-        title: 'Page 1 — Overview | 页面 1 — 概览',
+ title: 'Page 1 — Overview | 页面 1 — 概览',
         html: `
           <p><b>Thank you very much for participating in this experiment!</b> | <b>非常感谢您参加本次实验！</b></p>
           <p>Next, we will provide you with the experiment instructions and operation tutorial, which will take about 10 minutes. | 接下来将为您进行实验说明与操作教学，预计耗时约 10 分钟。</p>
@@ -105,7 +105,7 @@
           <h3>Experiment Goal | 实验目标</h3>
           <ul>
             <li>Use the five small cubes (representing fingers) to lift the offset cylinder above the target height and hold it stably for 3 seconds. | 使用五个小立方体（代表手指）将偏心圆柱体抓起，移动到目标高度以上，并在该高度稳定保持 3 秒钟。</li>
-            <li>During these 3 seconds, the cylinder’s tilt angle must not exceed 5°. | 在这 3 秒内，圆柱体的倾斜角度不得超过 5°。</li>
+            <li>During these 3 seconds, the cylinder’s tilt angle must not exceed 5°. | 在这 3 秒内，圆柱体的倾斜角度不得超过7.5°。</li>
             <li>Under the three different conditions of vision, touch, and vision-touch combination, we hope you can find the optimal grasping posture with the fewest possible attempts. | 在视觉、触觉以及视触结合三种不同条件下，我们希望您尽可能用最少的尝试次数找到最佳的抓取姿势。</li>
           </ul>
           <br>
@@ -130,7 +130,7 @@
 
       /* ---------- Page 2 ---------- */
       {
-        title: 'Page 2 — Hardware | 页面 2 — 硬件',
+     title: 'Page 2 — Hardware | 页面 2 — 硬件',
         html: `
           <h3>Our hardware devices include: | 我们的硬件设备包括：</h3>
           <ul>
@@ -155,22 +155,22 @@
             <p>It is used as a physical button, and pressing it switches to the next center of mass. | 它作为物理按钮使用，按下后即可切换到下一个重心。</p>
             <img src="控制器.jpg" alt="XAC">
           </ul>
-        `
-      },
+        `      },
 
       /* ---------- Page 3 ---------- */
       {
-        title: 'Page 3 · Simple Grasping Tutorial | 第三页 · 简单抓取教学',
+     title: 'Page 3 · Simple Grasping Tutorial | 第三页 · 简单抓取教学',
         html: `
           <p>When the experiment officially begins, you should be in the state shown in the figure: wearing the headset, with your left hand on the button and your right hand relaxed in the air. | 当实验正式开始后，您应处于如下图所示的状态：佩戴好头显，左手放在按钮上，右手自然放松地悬空。</p>
           <p><b>Note: Please always keep your palm facing down, with your fingers naturally hanging down. | 注意：请始终保持掌心向下，五指自然下垂。</b></p>
           <img src="如何开始.jpg" alt="How to Start">
           <br>
-          <p>Rotating your hand will make the five cubes change position with slight delay. | 旋转您的手部，五个小方块会随着手部旋转逐渐改变位置（稍有延迟）。</p>
+          <p>When you open your fingers, rotating your hand will gradually change the positions of the five cubes (with a slight delay). When your fingers are closed, the cubes cannot rotate. | 当您张开手指时，旋转手部会带动五个小方块随之逐渐改变位置（存在一定延迟）。在手指闭合的状态下，方块则无法旋转。</p>
           <video controls><source src="比较.mp4" type="video/mp4"></video>
           <p><b>Note: If a large rotation angle is required, move your arm instead of relying only on your wrist. | 注意：如果需要旋转的角度过大，请移动手臂，而不仅仅依靠手腕。</b></p>
           <video controls><source src="手臂旋转.mp4" type="video/mp4"></video>
           <br>
+          <p>When you need to open the cubes, stretch your fingers as much as possible; when you need to close them, clench your fingers firmly. | 当您需要张开方块时，请尽力伸展手指；当您需要合拢方块时，请尽力收拢手指。</p>
           <p>Closing fingers makes the cubes close (grasp). | 合拢手指时，小方块会闭合（模拟抓取）。</p>
           <p>After grasping, slowly move your right hand up/down to lift. | 抓住后，慢慢上下移动右手抬起圆柱体。</p>
           <video controls><source src="抓取和上下移动.mp4" type="video/mp4"></video>
@@ -180,21 +180,7 @@
 
       /* ---------- Page 4 ---------- */
       {
-        title: 'Page 4 — Trial Experience | 第四页 · 体验',
-        html: `
-          <p>Wearing demonstration: | 佩戴方式演示：</p>
-          <video controls><source src="头显佩戴方式.mp4" type="video/mp4"></video>
-          <h3>Now, please put on the VR device and adjust it until comfortable. | 现在，请戴上 VR 设备并调整到舒适。</h3>
-          <img src="quest 3.png" alt="Quest 3 Trial">
-          <br>
-          <h1><b>⚠ If you have any questions during the experiment, please ask the experimenter.⚠</b></h1>
-          <h1><b>⚠如果在实验过程中有任何问题，请及时向实验人员咨询。⚠</b></h1>
-        `
-      },
-
-      /* ---------- Page 5 ---------- */
-      {
-        title: 'Page 5 — Outcome & Attempts | 第五页 · 结果与次数',
+        title: 'Page 4 — Outcome & Attempts | 第四页 · 结果与次数',
         html: `
           <p>Leaving the blue lock area → cylinder tilts/slips; adjust via feedback. | 离开蓝色锁定区后会倾斜滑动，请依据反馈调整。</p>
           <p>Goal: Lift the cylinder above the black-and-white plane and hold it for 3 seconds, ensuring that the tilt angle does not exceed 5° during this time. | 目标：将圆柱体提升到黑白平面以上并保持 3 秒，确保在这 3 秒内倾斜角度不超过 5°。</p>
@@ -210,21 +196,9 @@
         `
       },
 
-      /* ---------- Page 6 ---------- */
+      /* ---------- Page 5 ---------- */
       {
-        title: 'Page 6 — Trial Experience | 第六页 · 体验',
-        html: `
-          <h3>Now, please put on the VR device | 现在，请戴上 VR 设备。</h3>
-          <img src="quest 3.png" alt="Quest 3 Trial">
-          <br>
-          <h1><b>⚠ If you have any questions during the experiment, please ask the experimenter.⚠</b></h1>
-          <h1><b>⚠如果在实验过程中有任何问题，请及时向实验人员咨询。⚠</b></h1>
-        `
-      },
-
-      /* ---------- Page 7 ---------- */
-      {
-        title: 'Page 7 · Instruction for Different Modes | 第七页 · 不同模式教学',
+        title: 'Page 5 · Instruction for Different Modes | 第五页 · 不同模式教学',
         html: `
           <br>
           <h1><b>⚠ Please make sure to find the finger cube position that keeps the cylinder less tilted, with as few attempts as possible!!!⚠</b></h1>
@@ -246,11 +220,13 @@
         `
       },
 
-      /* ---------- Page 8 ---------- */
+      /* ---------- Page 6 ---------- */
       {
-        title: 'Page 8 — Trial Experience | 第八页 · 体验',
+        title: 'Page 6 — Trial Experience | 页面 6 · 体验',
         html: `
-          <h3>Now, please put on the VR device | 现在，请戴上 VR 设备。</h3>
+          <p>Wearing demonstration: | 佩戴方式演示：</p>
+          <video controls><source src="头显佩戴方式.mp4" type="video/mp4"></video>
+          <h3>Now, please put on the VR device and adjust it until comfortable. | 现在，请戴上 VR 设备并调整到舒适。</h3>
           <img src="quest 3.png" alt="Quest 3 Trial">
           <br>
           <h1><b>⚠ If you have any questions during the experiment, please ask the experimenter.⚠</b></h1>
@@ -258,9 +234,9 @@
         `
       },
 
-      /* ---------- Page 9 ---------- */
+      /* ---------- Page 7 ---------- */
       {
-        title: 'Page 9 — Formal Experiment | 第九页 · 正式实验',
+        title: 'Page 7 — Formal Experiment | 页面 7 · 正式实验',
         html: `
           <p>The long introduction and tutorial are finally over! 🎉🥳👏 Now, let’s begin the formal experiment! | 冗长的介绍与教学终于结束啦！🎉🥳👏 现在请开始正式实验吧！</p>
         `
