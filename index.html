@@ -184,14 +184,16 @@
         html: `
           <p>Leaving the blue lock area → cylinder tilts/slips; adjust via feedback. | 离开蓝色锁定区后会倾斜滑动，请依据反馈调整。</p>
           <p>Goal: Lift the cylinder above the black-and-white plane and hold it for 3 seconds, ensuring that the tilt angle does not exceed 5° during this time. | 目标：将圆柱体提升到黑白平面以上并保持 3 秒，确保在这 3 秒内倾斜角度不超过 5°。</p>
-          <p>Success: sound + green label “Well Done! Next CoM! Press the button”. | 成功：提示音 + 绿色标签。</p>
+          <p>When you succeed, a success sound will play, and a green label saying “Well Done! Next CoM! Press the button” will appear. At the same time, the target plane and all objects on the table will disappear, and you can press the physical button to switch to the next center of mass. | 当您成功完成抓取后，系统会播放提示成功的音效，并显示绿色小标签 “Well Done! Next CoM! Press the button”。与此同时，黑白格平面消失，桌面上的所有物体也会消失，此时您可以按下物理按钮切换到下一个重心。</p>
+          <p>Then, please press the physical button to proceed to the cylinder with the next center of mass. | 然后，请按下物理按钮，进入下一个重心配置的圆柱体。</p>
           <video controls><source src="成功抓取.mp4" type="video/mp4"></video>
           <br>
-          <p>Fail (tilt too large): sound + red label “Still slipping! Try again”. | 倾斜过大：失败音 + 红色标签。</p>
+          <p>If you lift the cylinder above the target height and hold it for 3 seconds but the tilt is too large, a failure sound will play, and a red label saying “Still slipping! Try again” will appear. This means a failed attempt, and you need to try again. | 如果您将圆柱体提到目标高度以上并保持了 3 秒，但倾斜角度过大，则会播放失败提示音，并出现红色小标签 “Still slipping! Try again”。这意味着一次失败，您需要重新抓取。</p>
           <video controls><source src="失败尝试.mp4" type="video/mp4"></video>
           <p>After a failure, please release your fingers and let the cylinder fall. Then, based on the visual or haptic feedback you receive, adjust the rotation direction and try to wrap more cubes around the direction in which the cylinder is tilting. | 失败后，请松开手指，让圆柱体落下。然后根据获得的视觉或触觉反馈调整旋转方向，并尽量让更多的小方块包裹住圆柱体倾倒的方向。</p>
           <br>
-          <p>Each CoM has up to 5 attempts; lifting counts as an attempt; if used up, yellow label and auto switch in 3s. | 每个重心最多 5 次；抬起才计次；用尽将黄标提示并 3 秒后自动切换。</p>
+          <p>For each center of mass, you can try up to five times. Note: closing your fingers to adjust the position on the table does not count, only actually lifting the cylinder counts as an attempt. If all five attempts are used up, a warning sound will play, and a yellow label saying “Oops, your attempts are used up! Will Switch to the next CoM in 3 seconds.” will appear. | 在同一重心条件下，您最多可以尝试五次。请注意：在桌面上合拢手指调整位置不会消耗次数，只有将圆柱体真正提起才算一次尝试。若五次均未成功，系统会播放提示音，并显示黄色小标签 “Oops, your attempts are used up! Will Switch to the next CoM in 3 seconds.”。</p>
+          <p>Then, please press the physical button to proceed to the cylinder with the next center of mass. | 然后，请按下物理按钮，进入下一个重心配置的圆柱体。</p>
           <video controls><source src="次数用尽.mp4" type="video/mp4"></video>
         `
       },
@@ -290,3 +292,4 @@
   </script>
 </body>
 </html>
+
